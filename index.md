@@ -9,33 +9,35 @@ Supplementary Website
 
 ## Abstract
 
-Mining software repositories is a popular means to gain insights into
-a software project’s evolution, monitor project health, support decisions and
-derive best practices. Tools supporting the mining process are commonly applied by 
-researchers and practitioners, but their limitations and agreement are
-often not well understood.
+Mining software repositories is a popular means to gain insights into a 
+software project's evolution, monitor project health, support decisions and 
+derive best practices. Tools supporting the mining process are commonly applied 
+by researchers and practitioners, but their limitations and agreement are often 
+not well understood.
 
-This study investigates some threats to validity in complex tool
-pipelines for evolutionary software analyses and evaluates the tools’ agreement 
-in terms of data, study outcomes and conclusions for the same research
-questions.
+This study investigates some threats to validity in complex tool pipelines for 
+evolutionary socio-technical software analyses. We evaluate the tools' 
+agreement in terms of data, study outcomes and conclusions for the same 
+research questions to derive actionable advice for researchers and 
+practitioners.
 
-We conduct a lightweight literature review to select *three* studies
-on collaboration and coordination, software maintenance and software quality
-from high-ranked venues, which we formally replicate with *four* independent,
-systematically selected mining tools to quantitatively and qualitatively compare 
-the extracted data, analysis results and conclusions.
+We conduct a lightweight literature review to select three studies on 
+collaboration and coordination, software maintenance and software quality from 
+high-ranked venues, which we formally replicate with four independent, 
+systematically selected mining tools to quantitatively and qualitatively 
+compare the extracted data, analysis results and conclusions.
 
-We find that numerous technical details in tool design and implementation accumulate
-along the complex mining pipelines and can cause substantial differences in the 
-extracted baseline data, its derivatives, subsequent results
-of statistical analyses and, under specific circumstances, conclusions.
+We find and summarise numerous technical details in tool design and 
+implementation which accumulate along the complex mining pipelines and can 
+cause substantial differences in the extracted baseline data, its derivatives, 
+subsequent results of statistical analyses and, under specific circumstances, 
+conclusions.
 
-Users must carefully choose tools and evaluate their limitations
-to assess the scope of validity in an adequate way. Reusing tools is recommended. 
-Researchers and tool authors can promote reusability and help reducing 
-uncertainties by reproduction packages and comparative studies following
-our approach.
+Users should evaluate mining tools and their limitations carefully to scope the 
+validity of their conclusions, for instance with the checklist we provide. 
+Researchers and tool authors can further reduce uncertainty through 
+reproduction packages and comparative studies in other MSR fields following our 
+methodology.
 
 ## Study repository
 
@@ -68,31 +70,6 @@ The annotated venue lists can be found here:
 
 Study counts for the categories are summarised [here]({{ site.baseurl }}/literature/index.html#studies-per-category) (raw data: [plot_summary.csv](/literature/plot_summary.csv))
 
-### Collaboration and coordination
-
-#### Agreement of count- and network-based operationalisations
-
-The agreement plots for all subject projects and analysis ranges are available [here]({{ site.baseurl }}/collaboration/index.html#metrics-agreement).
-
-Example:
-![Agreement for subject project GCC](/collaboration/gcc_agreement_107-104.png)
-
-#### Hierarchy stability
-
-The agreement plots for all subject projects and analysis ranges are available [here]({{ site.baseurl }}/collaboration/index.html#hierarchy-stability).
-
-Example:
-
-![Hierarchy stability for subject project GCC](/collaboration/gcc_stability_107-104.png)
-
-#### Agreement across tools per metrics
-
-The agreement plots for all subject projects and analysis ranges are available [here]({{ site.baseurl }}/collaboration/index.html#tools-agreement).
-
-Example:
-![Tool agreement for subject project GCC](/collaboration/gcc_tool_agreement_107-104.png)
-
-
 ### Software maintenance
 
 #### Correlations
@@ -123,7 +100,6 @@ Linear and quadratic models with control variables (edgelist version):
 
 ![Linear and quadratic models with control variables (edgelist version)](/productivity/reg_edgelist_controls.png)
 
-
 ### Software quality
 
 Correlation between turnover and bug density (with lines of code counted for all files identified by cloc):
@@ -133,3 +109,27 @@ Correlation between turnover and bug density (with lines of code counted for all
 Correlation table (with lines of code counted for files identified by cloc *and* the MSR tool):
 
 ![Correlation between turnover and bug density (tool)](/quality/corr_filtered.png)
+
+### Collaboration and coordination
+
+#### Agreement of count- and network-based operationalisations
+
+The agreement plots for all subject projects and analysis ranges are available [here]({{ site.baseurl }}/collaboration/index.html#metrics-agreement).
+
+Example:
+![Agreement for subject project GCC](/collaboration/gcc_agreement_107-104.png)
+
+#### Hierarchy stability
+
+The agreement plots for all subject projects and analysis ranges are available [here]({{ site.baseurl }}/collaboration/index.html#hierarchy-stability).
+
+Example:
+
+![Hierarchy stability for subject project GCC](/collaboration/gcc_stability_107-104.png)
+
+#### Agreement across tools per metrics
+
+The agreement plots for all subject projects and analysis ranges are available [here]({{ site.baseurl }}/collaboration/index.html#tools-agreement).
+
+Example:
+![Tool agreement for subject project GCC](/collaboration/gcc_tool_agreement_107-104.png)
